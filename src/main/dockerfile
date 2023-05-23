@@ -1,0 +1,4 @@
+FROM bellsoft/liberica-openjdk-alpine:11.0.16 as BuildProject
+WORKDIR /app
+COPY ./bin .
+CMD java -classpath . ru.geekbrains.lesson1.sample.Main
